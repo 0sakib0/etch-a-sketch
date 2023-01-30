@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    makeBoard(32);
+    makeBoard(64);
 })
-
+let board = document.querySelector(".board");
+const eraseButton = document.querySelector('.erase');
 
 function makeBoard(size) {
-    let board = document.querySelector(".board");
+    
     console.log(board);
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
@@ -18,5 +19,7 @@ function makeBoard(size) {
        board.appendChild(boardDivs).className = "grids"
         console.log();
     }
+   
+    
 }
 

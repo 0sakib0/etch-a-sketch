@@ -22,3 +22,12 @@ h1 {
     
 }
 
+.btcontainer {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.canvas {
+    border: solid black 1px;
+}
