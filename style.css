@@ -28,7 +28,29 @@
     justify-content: center;
 }
 
-.button {
-    width: 100px;
-    height: 100px;
+button {
+  align-self: center;
+  font-family: 'Bungee', cursive;
 }
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.grid-cell {
+  border: 1px solid black;
+  }
+
+.grid-cell:hover {
+  border: 1px solid black;
+  }
+
+.slider-container {
+  font-family: 'Bungee', cursive;
+}
+
