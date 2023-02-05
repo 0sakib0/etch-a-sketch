@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,15 +14,16 @@
     <div class="buttons">
         <button class="color-button" data-color="black">Black</button>
         <button class="color-button" data-color="white">Eraser</button>
-        <button>Rainbow</button>
+        <button id="rainbow-btn" data-color="red">Rainbow</button>
         <button class="clear-button">Clear</button>
     
 </button>
-<section class="slider-container">
+</div>
+<div class="slider-container">
 <label for="size-slider">Cells:</label>
 <input type="range" min="1" max="100" value="16" class="slider" id="size-slider">
 <span id="size-value"></span>
-</section>
-    <script src="/script.js"></script>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ const sizeSlider = document.getElementById("size-slider");
 const sizeValue = document.getElementById("size-value");
 
 
-
+// cell amount slider
 sizeValue.textContent = sizeSlider.value;
 createGrid(sizeSlider.value);
 
@@ -51,9 +51,25 @@ grid.addEventListener("mouseup", () => {
 
 function paintCell(e) {
   if (e.target.nodeName === "DIV") {
-    e.target.style.backgroundColor = color;
+    if (color === "red") {
+      e.target.style.backgroundColor = getRandomColor();
+    } else {
+      e.target.style.backgroundColor = color;
+    }
   }
 }
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+// rainbow button 
+
 
 // clear button function //
 clearButton.addEventListener("click", () => {
@@ -66,7 +82,8 @@ clearButton.addEventListener("click", () => {
 
 // functions to run //
 createGrid(16);
-blackColor();
+
+
 
 
 
