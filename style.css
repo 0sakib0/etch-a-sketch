@@ -72,15 +72,6 @@ label {
   
 }
 
-.footer {
-  display: flex;
-  font-family:'Bungee', cursive;
-  font-size: x-large;
-  margin-top: 130px;
-  gap: 10px;
-  
-}
-
 
 input[type="range"] {
   -webkit-appearance: none;
