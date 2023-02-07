@@ -1,11 +1,10 @@
-console.log("mango");
-
 const grid = document.querySelector(".grid-container");
 const eraseButton = document.querySelector(".color-button")
 const clearButton = document.querySelector(".clear-button");
 const blackButton = document.querySelector(".color-button");
 const sizeSlider = document.getElementById("size-slider");
 const sizeValue = document.getElementById("size-value");
+rainbowButton = document.querySelector("#rainbow-btn");
 
 
 // cell amount slider
@@ -51,7 +50,7 @@ grid.addEventListener("mouseup", () => {
 
 function paintCell(e) {
   if (e.target.nodeName === "DIV") {
-    if (color === "red") {
+    if (color === 'rainbow') {
       e.target.style.backgroundColor = getRandomColor();
     } else {
       e.target.style.backgroundColor = color;
@@ -59,6 +58,7 @@ function paintCell(e) {
   }
 }
 
+ // random color generator
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
   let color = '#';
@@ -67,8 +67,6 @@ function getRandomColor() {
   }
   return color;
 }
-
-// rainbow button 
 
 
 // clear button function //

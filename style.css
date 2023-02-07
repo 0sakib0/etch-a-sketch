@@ -71,3 +71,41 @@ label {
   flex-grow: 1;
   
 }
+
+.footer {
+  display: flex;
+  font-family:'Bungee', cursive;
+  font-size: x-large;
+  margin-top: 130px;
+  gap: 10px;
+  
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#8a8786, #b3aead);
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: black;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
